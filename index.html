@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tika Puri – Data Analyst Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tailwind (utilities only) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="header">
+    <div class="container">
+      <div class="brand">Freelancer</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-inner fade-in-up">
+      <ul class="social-links">
+        <li><a href="https://facebook.com/tikapuri37" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/tikapuri/" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/tikagithub" class="social-icon"><i class="fab fa-github"></i></a></li>
+      </ul>
+
+      <div class="hero-content">
+        <p class="intro">Hi! I am <span class="accent">Tika Puri</span></p>
+        <h1 class="title glow-pulse">Data Analyst</h1>
+        <p class="description">
+          I'm a data analyst passionate about transforming complex datasets into clear, actionable insights.
+        </p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn outline-btn hover:scale-105 active:scale-95 transition-transform duration-200 inline-flex items-center gap-2"> 
+           Explore My Projects <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="profile-wrapper float-slow">
+        <div class="ring">
+          <img src="assets/me.jpg" alt="Profile photo of Tika Puri" class="profile-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section class="about" id="about">
+    <div class="container about-inner reveal">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p class="about-intro">
+          I’m Tika Puri, a dedicated data analyst who loves turning raw data into clear, actionable insights. 
+          With a strong background in statistics and business intelligence, I enjoy exploring patterns hidden 
+          within numbers and presenting them in an accessible visual form.
+        </p>
+        <h3 class="skills-heading">Technical Skills</h3>
+        <ul class="skills-list">
+          <li><strong>Python:</strong> data cleaning, analysis, automation</li>
+          <li><strong>Power BI:</strong> interactive dashboards and reports</li>
+          <li><strong>SQL:</strong> query writing, data extraction and manipulation</li>
+          <li><strong>Excel:</strong> advanced formulas, pivot tables and charts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="projects-heading">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card pressable">
+          <div class="project-media"><img class="project-img" src="assets/project1.png" alt="Project screenshot 1" /></div>
+          <h3>Passenger Satisfaction Analytics & ML — Marjanta Airlines</h3>
+          <p>Analyzed 103k+ records to find key satisfaction drivers and built Logistic Regression & Random Forest models to predict outcomes.</p>
+          <a href="https://github.com/tikagithub/Modelling-and-Visualization" class="btn outline-btn project-cta">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="project-card pressable">
+          <div class="project-media"><img class="project-img" src="assets/project2.png" alt="Project screenshot 2" /></div>
+          <h3>CropFusion — Global Big Data & Cloud Modernization</h3>
+          <p>Designed a scalable cloud data platform to replace legacy infrastructure, unifying IoT/satellite crop data and analytics.</p>
+          <a href="https://github.com/tikagithub/Big_data" class="btn outline-btn project-cta">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
+
+        <article class="project-card pressable">
+          <div class="project-media"><img class="project-img" src="assets/project3.png" alt="Project screenshot 3" /></div>
+          <h3>Apex LoanFlow — Data-Driven Decision Support & Partial Automation</h3>
+          <p>Built a scalable pipeline to ingest PDF/Excel loan data, clean & unify it, and deploy ML + rule checks to triage applications.</p>
+          <a href="https://github.com/tikagithub/Python-for-data-analyst" class="btn outline-btn project-cta">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-left reveal">
+        <h2 class="contact-title">Contact us</h2>
+        <ul class="contact-list">
+          <li><span class="contact-icon"><i class="fa-solid fa-envelope"></i></span><a href="mailto:tikapuri1507@gmail.com">tikapuri1507@gmail.com</a></li>
+          <li><span class="contact-icon"><i class="fa-solid fa-phone"></i></span><a href="tel:+447951047118">+44 7951047118</a></li>
+          <li><span class="contact-icon"><i class="fa-solid fa-location-dot"></i></span><span class="contact-address">London, UK</span></li>
+        </ul>
+      </div>
+
+      <div class="contact-right reveal">
+        <!-- Form with AJAX -->
+        <form id="contactForm" class="contact-form-small" action="https://formspree.io/f/mdkdvkgn" method="POST">
+          <div class="cgroup">
+            <label for="cemail">Your email</label>
+            <input id="cemail" name="email" type="email" required placeholder="name@gmail.com" />
+          </div>
+          <div class="cgroup">
+            <label for="cname">Your name</label>
+            <input id="cname" name="name" type="text" required placeholder="Anurag" />
+          </div>
+          <div class="cgroup">
+            <label for="cmsg">Message</label>
+            <textarea id="cmsg" name="message" rows="4" required placeholder="How can we help?"></textarea>
+          </div>
+          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_subject" value="New enquiry from website" />
+          <button type="submit" class="btn primary-btn glow-btn">Send message</button>
+
+          <!-- Success/error message -->
+          <p id="formStatus" style="display:none; margin-top:10px; font-weight:600;"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Tika Puri · All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== JS ===== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const nav = document.querySelector('.nav');
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelectorAll('.nav a');
+      hamburger.addEventListener('click', () => {
+        nav.classList.toggle('open'); hamburger.classList.toggle('active');
+      });
+      navLinks.forEach(link => link.addEventListener('click', () => {
+        nav.classList.remove('open'); hamburger.classList.remove('active');
+      }));
+
+      const io = new IntersectionObserver((entries)=>entries.forEach(e=>{
+        if(e.isIntersecting) e.target.classList.add('is-visible');
+      }),{threshold:0.12});
+      document.querySelectorAll('.reveal, .fade-in-up').forEach(el=>io.observe(el));
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      document.querySelectorAll('.glow-btn').forEach(btn=>{
+        btn.addEventListener('pointermove', e=>{
+          const r = btn.getBoundingClientRect();
+          btn.style.setProperty('--x', ((e.clientX-r.left)/r.width*100)+'%');
+          btn.style.setProperty('--y', ((e.clientY-r.top)/r.height*100)+'%');
+        });
+      });
+
+      // AJAX Formspree submission
+      const form = document.getElementById('contactForm');
+      const statusMsg = document.getElementById('formStatus');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const data = new FormData(form);
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+          });
+          if (res.ok) {
+            form.reset();
+            statusMsg.style.display = 'block';
+            statusMsg.textContent = '✅ Message sent successfully!';
+            statusMsg.style.color = '#4ade80';
+          } else {
+            statusMsg.style.display = 'block';
+            statusMsg.textContent = '❌ Something went wrong. Please try again.';
+            statusMsg.style.color = '#f87171';
+          }
+        } catch (error) {
+          statusMsg.style.display = 'block';
+          statusMsg.textContent = '❌ Network error. Please try again.';
+          statusMsg.style.color = '#f87171';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
