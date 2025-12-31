@@ -344,3 +344,45 @@ section[id]{ scroll-margin-top: calc(var(--header-h) + 20px); }
     gap: 1.5rem;
   }
 }
+
+/* === Mobile nav dropdown FIX (override) === */
+@media (max-width: 768px){
+  /* Make sure header is a positioning context */
+  .header .container{
+    position: relative;
+  }
+
+  /* Show hamburger on mobile */
+  .hamburger{
+    display:flex !important;
+    flex-direction:column;
+    justify-content:center;
+    gap:5px;
+    z-index:1200;
+  }
+
+  /* Base nav on mobile */
+  .nav{
+    position: static;
+  }
+
+  /* HIDE menu by default on phones */
+  .nav ul{
+    position:absolute;
+    top:var(--header-h);
+    right:1.5rem;
+    flex-direction:column;
+    gap:1rem;
+    width:min(75vw,260px);
+    padding:1rem 1.25rem;
+    background:rgba(13,13,27,.98);
+    border-radius:0 0 0 10px;
+    box-shadow:var(--shadow-lg);
+    display:none !important;    /* <— hidden */
+  }
+
+  /* SHOW menu only when nav has .open (JS toggles this) */
+  .nav.open ul{
+    display:flex !important;    /* <— visible when open */
+  }
+}
